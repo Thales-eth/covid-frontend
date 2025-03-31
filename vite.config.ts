@@ -12,6 +12,8 @@ export default defineConfig({
       "@/services": "/src/services",
       "@/types": "/src/types",
       "@/utils": "/src/utils",
+      "@/routes": "/src/routes",
+      "@/pages": "/src/pages",
     },
   },
 })
