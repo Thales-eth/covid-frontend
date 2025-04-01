@@ -33,7 +33,8 @@
       "@/utils/*": ["src/utils/*"],
       "@/routes/*": ["src/routes/*"],
       "@/pages/*": ["src/pages/*"],
-      "@/assets/*": ["src/assets/*"]
+      "@/assets/*": ["src/assets/*"],
+      "@/hooks/*": ["src/hooks/*"]
     }
   },
   "include": ["src"]
