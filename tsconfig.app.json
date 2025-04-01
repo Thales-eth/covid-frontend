@@ -32,7 +32,8 @@
       "@/types/*": ["src/types/*"],
       "@/utils/*": ["src/utils/*"],
       "@/routes/*": ["src/routes/*"],
-      "@/pages/*": ["src/pages/*"]
+      "@/pages/*": ["src/pages/*"],
+      "@/assets/*": ["src/assets/*"]
     }
   },
   "include": ["src"]
