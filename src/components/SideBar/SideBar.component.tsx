@@ -1,7 +1,7 @@
-import dcycleLogo from "@/assets/images/dcycle.png"
-import NavItem from "../NavItem/NavItem.component"
-import { FolderPen, ChartNoAxesCombined } from "lucide-react"
-import { Link, Outlet } from "react-router-dom"
+import dcycleLogo from "@/assets/images/dcycle.png";
+import NavItem from "../NavItem/NavItem.component";
+import { FolderPen, ChartNoAxesCombined } from "lucide-react";
+import { Link, Outlet } from "react-router-dom";
 
 const NAVIGATION_LINKS = [
   {
@@ -16,7 +16,7 @@ const NAVIGATION_LINKS = [
     icon: <ChartNoAxesCombined />,
     key: "covid-info",
   },
-]
+];
 
 const SideBar = () => {
   return (
@@ -28,7 +28,7 @@ const SideBar = () => {
 
         <div className="flex flex-col gap-5 items-center">
           {NAVIGATION_LINKS.map(({ label, href, icon, key }) => {
-            return <NavItem key={key} label={label} href={href} icon={icon} />
+            return <NavItem key={key} label={label} href={href} icon={icon} />;
           })}
         </div>
       </nav>
@@ -36,7 +36,7 @@ const SideBar = () => {
         <Outlet />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default SideBar
+export default SideBar;

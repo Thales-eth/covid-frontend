@@ -1,7 +1,7 @@
-import { createBrowserRouter } from "react-router-dom"
-import CovidPage from "@/pages/CovidPage"
-import HomePage from "@/pages/Home"
-import SideBar from "@/components/SideBar/SideBar.component"
+import { createBrowserRouter } from "react-router-dom";
+import CovidPage from "@/pages/CovidPage";
+import HomePage from "@/pages/Home";
+import SideBar from "@/components/SideBar/SideBar.component";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +18,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-])
+]);
 
-export default router
+export default router;

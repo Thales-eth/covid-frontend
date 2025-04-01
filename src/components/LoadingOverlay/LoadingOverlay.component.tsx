@@ -1,7 +1,7 @@
-import Spinner from "../Spinner/Spinner.component"
+import Spinner from "../Spinner/Spinner.component";
 
 interface ILoadingOverlayProps {
-  title: string
+  title: string;
 }
 
 const LoadingOverlay = ({ title }: ILoadingOverlayProps) => {
@@ -10,7 +10,7 @@ const LoadingOverlay = ({ title }: ILoadingOverlayProps) => {
       <p className="body-medium">{title}</p>
       <Spinner size={10} />
     </div>
-  )
-}
+  );
+};
 
-export default LoadingOverlay
+export default LoadingOverlay;

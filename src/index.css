@@ -1,47 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,700&display=swap");
 @import "tailwindcss";
 
 @theme {
-    /* colors */
-    --color-lightGrey: rgba(241, 241, 241, 1);
-    --color-primaryBlack: rgba(27, 27, 27, 1);
+  /* colors */
+  --color-lightGrey: rgba(241, 241, 241, 1);
+  --color-primaryBlack: rgba(27, 27, 27, 1);
 }
 
 :root {
-/* typography */
-    --font-sans: "Inter", sans-serif;
-    --font-urbanist: "Urbanist", sans-serif;
+  /* typography */
+  --font-sans: "Inter", sans-serif;
+  --font-urbanist: "Urbanist", sans-serif;
 }
 
 @layer utilities {
-    .body-regular {
-        font-size: 16px;
-        font-weight: 400;
-        font-family: var(--font-sans);
-    }
+  .body-regular {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-sans);
+  }
 
-    .body-medium {
-        font-size: 18px;
-        font-weight: 500;
-        font-family: var(--font-sans);
-    }
+  .body-medium {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--font-sans);
+  }
 
-    .body-large {
-        font-size: 24px;
-        font-weight: 700;
-        font-family: var(--font-sans);
-    }
+  .body-large {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--font-sans);
+  }
 
-    .title-large {
-        font-size: 40px;
-        font-weight: 700;
-        font-family: var(--font-urbanist);
-    }
+  .title-large {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--font-urbanist);
+  }
 
-    .title-xlarge {
-        font-size: 64px;
-        font-weight: 700;
-        font-family: var(--font-urbanist);
-    }
+  .title-xlarge {
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--font-urbanist);
+  }
 }

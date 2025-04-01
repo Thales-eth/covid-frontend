@@ -1,15 +1,15 @@
-import { cn } from "@/utils/cn"
-import { Link, useLocation } from "react-router-dom"
+import { cn } from "@/utils/cn";
+import { Link, useLocation } from "react-router-dom";
 
 interface INavItemProps {
-  label: string
-  href: string
-  icon: React.ReactNode
+  label: string;
+  href: string;
+  icon: React.ReactNode;
 }
 
 const NavItem = ({ label, href, icon }: INavItemProps) => {
-  const { pathname } = useLocation()
-  const isActive = pathname === href
+  const { pathname } = useLocation();
+  const isActive = pathname === href;
   return (
     <Link
       to={href}
@@ -21,7 +21,7 @@ const NavItem = ({ label, href, icon }: INavItemProps) => {
       {icon}
       {label}
     </Link>
-  )
-}
+  );
+};
 
-export default NavItem
+export default NavItem;

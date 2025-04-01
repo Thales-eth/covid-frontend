@@ -1,21 +1,14 @@
-import { cn } from "@/utils/cn"
-import { InputHTMLAttributes } from "react"
+import { cn } from "@/utils/cn";
+import { InputHTMLAttributes } from "react";
 
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
-  name: string
-  value: string
-  placeholder: string
-  className?: string
+  name: string;
+  value: string;
+  placeholder: string;
+  className?: string;
 }
 
-const Input = ({
-  type,
-  name,
-  value,
-  placeholder,
-  className,
-  ...props
-}: IInputProps) => {
+const Input = ({ type, name, value, placeholder, className, ...props }: IInputProps) => {
   return (
     <input
       className={cn(
@@ -28,7 +21,7 @@ const Input = ({
       placeholder={placeholder}
       {...props}
     />
-  )
-}
+  );
+};
 
-export default Input
+export default Input;

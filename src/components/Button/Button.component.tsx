@@ -1,13 +1,13 @@
-import { cn } from "@/utils/cn"
-import { ButtonHTMLAttributes, ReactNode } from "react"
-import Spinner from "../Spinner/Spinner.component"
+import { cn } from "@/utils/cn";
+import { ButtonHTMLAttributes, ReactNode } from "react";
+import Spinner from "../Spinner/Spinner.component";
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode
-  className?: string
-  icon?: ReactNode
-  disabled?: boolean
-  loading?: boolean
+  children: ReactNode;
+  className?: string;
+  icon?: ReactNode;
+  disabled?: boolean;
+  loading?: boolean;
 }
 
 const Button = ({
@@ -37,7 +37,7 @@ const Button = ({
         </>
       )}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
