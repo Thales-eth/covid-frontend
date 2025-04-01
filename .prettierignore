@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+
+# VSCode
+.vscode
+
+# ESLint
+.eslintrc.js
+
+# Prettier
+.prettierrc
+.prettierignore
+
+# Git
+.gitignore
+.git
+
+# TypeScript
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
