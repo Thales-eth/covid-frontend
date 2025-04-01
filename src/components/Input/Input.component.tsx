@@ -12,7 +12,7 @@ const Input = ({ type, name, value, placeholder, className, ...props }: IInputPr
   return (
     <input
       className={cn(
-        "flex items-center w-full rounded-lg border border-primaryBlack/50 bg-transparent px-3 py-2 text-primaryBlack shadow-sm outline-none body-regular placeholder:text-primaryBlack/50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primaryBlack/50",
+        "body-regular flex w-full items-center rounded-lg border border-primaryBlack/50 bg-transparent px-3 py-2 text-primaryBlack shadow-sm outline-none placeholder:text-primaryBlack/50 focus-visible:ring-1 focus-visible:ring-primaryBlack/50 focus-visible:outline-none",
         className
       )}
       type={type}

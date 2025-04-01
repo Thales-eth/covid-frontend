@@ -14,7 +14,7 @@ const NavItem = ({ label, href, icon }: INavItemProps) => {
     <Link
       to={href}
       className={cn(
-        "flex items-center gap-2 text-primaryBlack body-regular rounded-lg px-5 py-[10px] hover:bg-lightGrey transition-all duration-300",
+        "body-regular flex items-center gap-2 rounded-lg px-5 py-[10px] text-primaryBlack transition-all duration-300 hover:bg-lightGrey",
         isActive && "bg-lightGrey"
       )}
     >

@@ -21,12 +21,12 @@ const NAVIGATION_LINKS = [
 const SideBar = () => {
   return (
     <div className="flex h-screen">
-      <nav className="fixed left-0 md:w-[240px] h-full bg-white px-5 py-10 flex flex-col gap-[40px] items-center border-r border-lightGrey">
+      <nav className="fixed left-0 flex h-full flex-col items-center gap-[40px] border-r border-lightGrey bg-white px-5 py-10 md:w-[240px]">
         <Link to="/">
           <img src={dcycleLogo} alt="dcycle logo" className="w-[150px]" />
         </Link>
 
-        <div className="flex flex-col gap-5 items-center">
+        <div className="flex flex-col items-center gap-5">
           {NAVIGATION_LINKS.map(({ label, href, icon, key }) => {
             return <NavItem key={key} label={label} href={href} icon={icon} />;
           })}
