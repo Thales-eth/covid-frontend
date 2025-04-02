@@ -21,10 +21,9 @@ const Button = ({
   return (
     <button
       className={cn(
-        "body-regular flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-primaryBlack px-4 py-2 text-white",
+        "body-regular flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-gradient-dcycle px-4 py-2 text-white",
         className,
-        disabled && "opacity-50",
-        loading && "cursor-not-allowed opacity-50"
+        (disabled || loading) && "opacity-50 cursor-not-allowed"
       )}
       {...props}
     >

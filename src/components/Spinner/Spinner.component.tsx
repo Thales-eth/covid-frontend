@@ -10,7 +10,11 @@ const Spinner = ({ size = 10, className }: ISpinnerProps) => {
   return (
     <div className="flex items-center justify-center">
       <Loader2
-        className={cn("animate-spin text-white", size && `h-${size} w-${size}`, className)}
+        style={{
+          width: `${size}px`,
+          height: `${size}px`,
+        }}
+        className={cn("animate-spin text-white", className)}
       />
     </div>
   );

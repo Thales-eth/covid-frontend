@@ -19,7 +19,7 @@ const NavItem = ({ label, href, icon }: INavItemProps) => {
       )}
     >
       {icon}
-      {label}
+      <span className="hidden md:block">{label}</span>
     </Link>
   );
 };
