@@ -80,6 +80,10 @@ npm run build
 npm run preview
 ```
 
+3. Adding a different VITE_API_URL value:
+
+Change VITE_API_URL if using a deployed API URL.
+
 ### Docker
 
 You can run the application using Docker in two ways:

@@ -59,7 +59,7 @@ export const useNameForm = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!name) return;
-    fetchNameData(name.trim());
+    fetchNameData(name);
     setName("");
   };
 
