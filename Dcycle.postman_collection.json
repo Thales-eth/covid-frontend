@@ -1,369 +1,329 @@
 {
-	"info": {
-		"_postman_id": "324864ca-f9ec-41c6-9c4d-f66b18b01491",
-		"name": "Dcycle",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "21704274"
-	},
-	"item": [
-		{
-			"name": "By Name",
-			"item": [
-				{
-					"name": "Get Name Gender",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BASE_URL}}/genderize/:name",
-							"host": [
-								"{{BASE_URL}}"
-							],
-							"path": [
-								"genderize",
-								":name"
-							],
-							"variable": [
-								{
-									"key": "name",
-									"value": ""
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Success",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/genderize/:name",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"genderize",
-										":name"
-									],
-									"variable": [
-										{
-											"key": "name",
-											"value": "Luis"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "63"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"3f-BlUAQzivHXOZOVY9PsMV9qFeDOc\""
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 31 Mar 2025 20:26:38 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"count\": 1783268,\n    \"name\": \"Luis\",\n    \"gender\": \"male\",\n    \"probability\": 1\n}"
-						}
-					]
-				},
-				{
-					"name": "Get Countries by Name",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BASE_URL}}/nationalize/:name",
-							"host": [
-								"{{BASE_URL}}"
-							],
-							"path": [
-								"nationalize",
-								":name"
-							],
-							"variable": [
-								{
-									"key": "name",
-									"value": "Daniel"
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Success",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/nationalize/:name",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"nationalize",
-										":name"
-									],
-									"variable": [
-										{
-											"key": "name",
-											"value": "Juan"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "310"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"136-w4e1J4QyX9rcduyHWHbppGJU9dc\""
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 31 Mar 2025 21:10:18 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"count\": 47640,\n    \"name\": \"Juan\",\n    \"country\": [\n        {\n            \"country_id\": \"PH\",\n            \"probability\": 0.07751832487142793\n        },\n        {\n            \"country_id\": \"GT\",\n            \"probability\": 0.06656420499502301\n        },\n        {\n            \"country_id\": \"ES\",\n            \"probability\": 0.04939876770978701\n        },\n        {\n            \"country_id\": \"TW\",\n            \"probability\": 0.0471336347699892\n        },\n        {\n            \"country_id\": \"AR\",\n            \"probability\": 0.04193229613170128\n        }\n    ]\n}"
-						}
-					]
-				},
-				{
-					"name": "Get Age by Name",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BASE_URL}}/agify/:name",
-							"host": [
-								"{{BASE_URL}}"
-							],
-							"path": [
-								"agify",
-								":name"
-							],
-							"variable": [
-								{
-									"key": "name",
-									"value": "Dan"
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Success",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/agify/:name",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"agify",
-										":name"
-									],
-									"variable": [
-										{
-											"key": "name",
-											"value": "Dan"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "37"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"25-WaOe6F3ZERyIh7H41CXVJCHtFtE\""
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 31 Mar 2025 21:11:07 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"count\": 67782,\n    \"name\": \"Dan\",\n    \"age\": 67\n}"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Covid",
-			"item": [
-				{
-					"name": "Get Covid Historical",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BASE_URL}}/covid/historical",
-							"host": [
-								"{{BASE_URL}}"
-							],
-							"path": [
-								"covid",
-								"historical"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Success",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/agify/:name",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"agify",
-										":name"
-									],
-									"variable": [
-										{
-											"key": "name",
-											"value": "Dan"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "37"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"25-WaOe6F3ZERyIh7H41CXVJCHtFtE\""
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 31 Mar 2025 21:11:07 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"count\": 67782,\n    \"name\": \"Dan\",\n    \"age\": 67\n}"
-						}
-					]
-				}
-			]
-		}
-	],
-	"variable": [
-		{
-			"key": "BASE_URL",
-			"value": "http://localhost:3200/api",
-			"type": "default"
-		}
-	]
+  "info": {
+    "_postman_id": "324864ca-f9ec-41c6-9c4d-f66b18b01491",
+    "name": "Dcycle",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "21704274"
+  },
+  "item": [
+    {
+      "name": "By Name",
+      "item": [
+        {
+          "name": "Get Name Gender",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/genderize/:name",
+              "host": ["{{BASE_URL}}"],
+              "path": ["genderize", ":name"],
+              "variable": [
+                {
+                  "key": "name",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{BASE_URL}}/genderize/:name",
+                  "host": ["{{BASE_URL}}"],
+                  "path": ["genderize", ":name"],
+                  "variable": [
+                    {
+                      "key": "name",
+                      "value": "Luis"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "63"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"3f-BlUAQzivHXOZOVY9PsMV9qFeDOc\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 31 Mar 2025 20:26:38 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"count\": 1783268,\n    \"name\": \"Luis\",\n    \"gender\": \"male\",\n    \"probability\": 1\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Countries by Name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/nationalize/:name",
+              "host": ["{{BASE_URL}}"],
+              "path": ["nationalize", ":name"],
+              "variable": [
+                {
+                  "key": "name",
+                  "value": "Daniel"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{BASE_URL}}/nationalize/:name",
+                  "host": ["{{BASE_URL}}"],
+                  "path": ["nationalize", ":name"],
+                  "variable": [
+                    {
+                      "key": "name",
+                      "value": "Juan"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "310"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"136-w4e1J4QyX9rcduyHWHbppGJU9dc\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 31 Mar 2025 21:10:18 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"count\": 47640,\n    \"name\": \"Juan\",\n    \"country\": [\n        {\n            \"country_id\": \"PH\",\n            \"probability\": 0.07751832487142793\n        },\n        {\n            \"country_id\": \"GT\",\n            \"probability\": 0.06656420499502301\n        },\n        {\n            \"country_id\": \"ES\",\n            \"probability\": 0.04939876770978701\n        },\n        {\n            \"country_id\": \"TW\",\n            \"probability\": 0.0471336347699892\n        },\n        {\n            \"country_id\": \"AR\",\n            \"probability\": 0.04193229613170128\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Age by Name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/agify/:name",
+              "host": ["{{BASE_URL}}"],
+              "path": ["agify", ":name"],
+              "variable": [
+                {
+                  "key": "name",
+                  "value": "Dan"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Success",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{BASE_URL}}/agify/:name",
+                  "host": ["{{BASE_URL}}"],
+                  "path": ["agify", ":name"],
+                  "variable": [
+                    {
+                      "key": "name",
+                      "value": "Dan"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "37"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"25-WaOe6F3ZERyIh7H41CXVJCHtFtE\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 31 Mar 2025 21:11:07 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"count\": 67782,\n    \"name\": \"Dan\",\n    \"age\": 67\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Covid",
+      "item": [
+        {
+          "name": "Get Covid Historical",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/covid/historical",
+              "host": ["{{BASE_URL}}"],
+              "path": ["covid", "historical"]
+            }
+          },
+          "response": [
+            {
+              "name": "Success",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{BASE_URL}}/agify/:name",
+                  "host": ["{{BASE_URL}}"],
+                  "path": ["agify", ":name"],
+                  "variable": [
+                    {
+                      "key": "name",
+                      "value": "Dan"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "37"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"25-WaOe6F3ZERyIh7H41CXVJCHtFtE\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 31 Mar 2025 21:11:07 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"count\": 67782,\n    \"name\": \"Dan\",\n    \"age\": 67\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "BASE_URL",
+      "value": "http://localhost:3200/api",
+      "type": "default"
+    }
+  ]
 }

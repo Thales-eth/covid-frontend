@@ -1,54 +1,111 @@
-# React + TypeScript + Vite
+# Dcycle Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A humble React application built with TypeScript, Vite, and TailwindCSS.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19
+- TypeScript
+- Vite
+- TailwindCSS
+- React Query
+- React Router DOM
+- Axios
+- Sonner (Toast notifications)
+- date-fns (Date manipulation)
+- Recharts (Data visualization)
+- Postman Collection (API documentation)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+- Node.js (v18 or higher)
+- npm
+- Docker (optional)
+
+### Development
+
+1. Install dependencies:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Start the development server:
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
+```bash
+npm run dev
 ```
+
+The application will be available at `http://localhost:5173`
+
+### Building for Production
+
+1. Build the application:
+
+```bash
+npm run build
+```
+
+2. Preview the production build:
+
+```bash
+npm run preview
+```
+
+### Docker
+
+You can run the application using Docker in two ways:
+
+1. Build and run manually:
+
+```bash
+# Build the Docker image
+docker build -t dcycle-frontend .
+
+# Run the container
+docker run -p 3000:3000 dcycle-frontend
+```
+
+2. Using npm scripts:
+
+```bash
+# Build the Docker image
+npm run docker:build
+
+# Run the container
+npm run docker:run
+```
+
+The application will be available at `http://localhost:3000` when running in Docker.
+
+### Other Available Scripts
+
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+
+## Project Structure
+
+The project follows a modern React application structure with the following key features:
+
+- TypeScript for type safety
+- ESLint and Prettier for code quality
+- Husky for git hooks
+- TailwindCSS for styling
+- React Query for RPC state management
+- React Router for navigation
+- Sonner for toast notifications
+- date-fns for date manipulation and formatting
+- Recharts for data visualization
+- Postman collection for API documentation and testing
+
+## API Documentation
+
+The project includes a Postman collection (`Dcycle.postman_collection.json`) that documents all available API endpoints. This collection can be imported into Postman to test the API endpoints and includes:
+
+- Name-based endpoints (gender, nationality, age prediction)
+- COVID-19 data endpoints
+- Historical data endpoints
+
+The collection uses environment variables for base URL configuration, making it easy to switch between different environments.
