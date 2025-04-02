@@ -1,12 +1,13 @@
-import { createBrowserRouter } from "react-router-dom";
+import ErrorBoundary from "@/components/ErrorBoundary/ErrorBoundary.component";
+import SideBar from "@/components/SideBar/SideBar.component";
 import CovidPage from "@/pages/CovidPage";
 import HomePage from "@/pages/Home";
-import SideBar from "@/components/SideBar/SideBar.component";
-
+import { createBrowserRouter } from "react-router-dom";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <SideBar />,
+    ErrorBoundary,
     children: [
       {
         path: "/",
