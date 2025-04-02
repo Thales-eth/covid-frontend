@@ -2,19 +2,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,700&display=swap");
 @import "tailwindcss";
 
-@theme {
-  /* colors */
-  --color-lightGrey: rgba(241, 241, 241, 1);
-  --color-primaryBlack: rgba(27, 27, 27, 1);
-}
-
 :root {
   /* typography */
   --font-sans: "Inter", sans-serif;
   --font-urbanist: "Urbanist", sans-serif;
+  /* colors */
+  --color-slateBlue: rgba(47, 69, 245, 1);
+  --color-darkTurquoise: rgba(56, 207, 217, 1);
+  --color-secondaryBlue: rgba(241, 246, 254, 1);
+  --color-primaryGreen: rgba(102, 219, 109, 1);
+  --gradient-dcycle: repeating-linear-gradient(
+    180deg,
+    var(--color-slateBlue),
+    var(--color-darkTurquoise)
+  );
+}
+
+@theme {
+  /* colors */
+  --color-lightGrey: rgba(241, 241, 241, 1);
+  --color-primaryBlack: rgba(27, 27, 27, 1);
+  --color-secondaryBlue: rgba(241, 246, 254, 1);
+  --color-slateBlue: var(--color-slateBlue);
+  --color-darkTurquoise: var(--color-darkTurquoise);
 }
 
 @layer utilities {
+  .body-small {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font-sans);
+  }
+
   .body-regular {
     font-size: 16px;
     font-weight: 400;
@@ -25,11 +44,14 @@
     font-size: 18px;
     font-weight: 500;
     font-family: var(--font-sans);
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   .body-large {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
     font-family: var(--font-sans);
   }
 
@@ -43,5 +65,19 @@
     font-size: 64px;
     font-weight: 700;
     font-family: var(--font-urbanist);
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  .text-gradient {
+    background-image: var(--gradient-dcycle);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-gradient-dcycle {
+    background-image: var(--gradient-dcycle);
   }
 }
